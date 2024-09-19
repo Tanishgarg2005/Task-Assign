@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button>hello </button>
+       </div>
+       <script>
+        const element = document.querySelector('.container');
+        element.style.backgroundColor = 'yellow';
+       </script> 
+    
+</body>
+</html>
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <div class="container">
+         <button>hello</button>
+         <button>world</button>
+     </div><br>
+
+     <div id="mydiv">
+        <button onclick="changeContent()">Change content</button>
+     </div><br>
+     <img src="https://www.google.com/imgres?q=images&imgurl=https%3A%2F%2Fletsenhance.io%2Fstatic%2F8f5e523ee6b2479e26ecc91b9c25261e%2F1015f%2FMainAfter.jpg&imgrefurl=https%3A%2F%2Fletsenhance.io%2F&docid=-t22bY2ix3gHaM&tbnid=tYmxDgFq4MrkJM&vet=12ahUKEwibtNqzrs6IAxXZEUQIHUc6ECoQM3oECBcQAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwibtNqzrs6IAxXZEUQIHUc6ECoQM3oECBcQAA" alt="" id="myimage">
+     <button onclick="Changeimage()">Change image</button>
+     <script>
+         const element = document.querySelector('.container');
+         element.style.backgroundColor = 'yellow';
+ 
+         const buttons = document.querySelectorAll('.container button');
+         buttons.forEach(button => {
+             button.style.color = 'red';
+         });
+
+
+         function changeContent(){
+            document.getElementById("mydiv").innerHTML="New content";
+         }
+         function Changeimage(){
+            document.getElementById("myimage").setAttribute("src","https://www.google.com/imgres?q=images&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F674010%2Fpexels-photo-674010.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-anjana-c-169994-674010.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fbeautiful%2F&docid=B51x0PBR9KNzvM&tbnid=sKMM4eBjWSQEBM&vet=12ahUKEwibtNqzrs6IAxXZEUQIHUc6ECoQM3oECGUQAA..i&w=2976&h=3968&hcb=2&ved=2ahUKEwibtNqzrs6IAxXZEUQIHUc6ECoQM3oECGUQAA");
+         }
+     </script> 
+ </body>
+ </html>
